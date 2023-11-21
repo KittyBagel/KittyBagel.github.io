@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aleksova spletna stran</title>
+	<style>
+		a:link, a:visited {
+		text-decoration:none;
+  		color: Pink;
+  		border: 2px solid purple;
+		border-radius: 10px;
+ 		padding: 5px 10px;
+ 		text-align: center;
+  		display: inline-block;
+		}
+		
+		a:hover, a:active {
+		text-decoration:none;
+  		background-color: pink;
+  		color: Black;
+		}
+		.nav {
+		  background-color: rgba(103,51,181,0.4);
+		  list-style-type: none;
+		  text-align: center;
+		  margin: 0;
+		  padding: 0;
+		}
+		.nav li {
+		  display: inline-block;
+		  font-size: 20px;
+		  padding: 20px;
+		}
+		body {
+		background-image:url("https://i.imgur.com/GWWB5CW.png");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+		}
+		h1 {
+		  color: White;
+		  text-align: center;
+		}
+		p {
+		  color:White;
+		}
+        div {
+		  color:White;
+          text-align: center;
+		}
+
+		form {
+            background-image:url("https://imgur.com/MYIihI4");
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        button {
+            background-color: #fff;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }    
+        
+        button:hover {
+        background-color: violet;
+        
+        }
+	</style>
+</head>
+	<body>
+		<h1>Anketa</h1>
+			<ul class="nav">Meni
+			<li><a href="index.html">Domov</a></li>
+			<li><a href="glasba.html">Glasba</a></li>
+			<li><a href="anketa.html">Anketa</a></li>
+			<li><a href="vaje.html">Vaje</a></li>
+            <li><a href="vrbancic.html">Vrbancic</a></li>
+			</ul>
+   
+    <form id="form">
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Ime
+            </label>
+            <input type="name"
+                   id="name"
+                   placeholder="Vpisi svoje ime" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+            <input type="email"
+                   id="email"
+                   placeholder="Vpisi svoj email" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Starost
+            </label>
+            <input type="age"
+                   id="age"
+                   placeholder="Vpisi svojo starost" />
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Katera moznost vas najbolje opisuje?
+            </label>
+            <select name="role" id="role">
+                <option value="student">Dijak</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                 Profesionalec   
+                </option>
+                <option value="other">Ostalo</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Kaj pripomb ali predlogov
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+
+        <button type="submit" value="submit">
+            Poslji
+        </button>
+    </form>
+<br>
+		<audio autoplay, controls>
+		<source src="Music/petals.ogg" type="audio/ogg">
+		<source src="Music/petals.mp3" type="audio/mpeg">
+		</audio>	
+	</body>
+</html>
